@@ -1,0 +1,33 @@
+{
+  "app": {
+    "title": "Mole",
+    "subtitle": "Secure, peer-to-peer file sharing.\nNo servers, no limits.",
+    "footer_disclaimer": "By joining, you connect directly to other devices in the room."
+  },
+  "lobby": {
+    "enter_room_id": "Enter 6-char Room ID",
+    "join_room": "Join Room",
+    "or": "OR",
+    "create_new_room": "Create New Room"
+  },
+  "room": {
+    "back_to_lobby": "Back to Lobby",
+    "release_to_broadcast": "Release to Broadcast",
+    "broadcast_desc": "File will be sent to all connected devices",
+    "room_label": "Room",
+    "waiting_title": "Waiting for devices...",
+    "waiting_desc": "Share the link to connect"
+  },
+  "peer": {
+    "me": "My Device",
+    "device": "Device",
+    "this_is_you": "This is you",
+    "click_to_send": "Click to send file",
+    "sent": "Sent"
+  },
+  "network": {
+    "optimization": "Network Optimization",
+    "fail": "Fail",
+    "others_checked": "+ {{count}} other servers checked"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "app": {
+    "title": "Mole",
+    "subtitle": "安全、点对点的文件传输。\n无服务器，无限制。",
+    "footer_disclaimer": "加入房间即代表您将直接连接到房间内的其他设备。"
+  },
+  "lobby": {
+    "enter_room_id": "输入6位房间号",
+    "join_room": "加入房间",
+    "or": "或",
+    "create_new_room": "创建新房间"
+  },
+  "room": {
+    "back_to_lobby": "返回大厅",
+    "release_to_broadcast": "松开以广播",
+    "broadcast_desc": "文件将发送给所有已连接的设备",
+    "room_label": "房间",
+    "waiting_title": "等待设备接入...",
+    "waiting_desc": "分享链接以邀请他人"
+  },
+  "peer": {
+    "me": "我的设备",
+    "device": "设备",
+    "this_is_you": "这是您",
+    "click_to_send": "点击发送文件",
+    "sent": "已发送"
+  },
+  "network": {
+    "optimization": "网络优化",
+    "fail": "失败",
+    "others_checked": "+ 还有 {{count}} 个服务器已检测"
+  }
+}

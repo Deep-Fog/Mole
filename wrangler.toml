@@ -1,0 +1,26 @@
+# Top-level configuration
+name = "mole" # 你的 Worker 應用名稱
+main = "backend/src/worker.js"         # Worker 入口文件
+compatibility_date = "2025-11-27"
+
+# 構建配置 - 在部署前構建前端
+[build]
+command = "npm run build --workspace=frontend"
+
+# 靜態資源配置
+[assets]
+directory = "frontend/dist"
+binding = "ASSETS"
+
+# Durable Objects 配置
+# 這部分是 DO 的核心，它告訴 Cloudflare 這個 Worker 使用了一個名叫 SignalingRoom 的 DO。
+[durable_objects]
+bindings = [
+  { name = "SIGNALING_ROOM", class_name = "SignalingRoom" }
+]
+
+# DO 的遷移配置
+# 每次你修改 DO 的類（比如 SignalingRoom.js），都需要一個新的遷移來應用更改。
+[[migrations]]
+tag = "v1" # 版本標籤
+new_sqlite_classes = ["SignalingRoom"] # 要應用本次遷移的 DO 類名

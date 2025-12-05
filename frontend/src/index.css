@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-200;
+  }
+}
+
+/* 
+  The 'aurora' animation for the background blobs.
+  It uses CSS variables (--x-from, --y-from, --x-to, --y-to)
+  which will be set via inline styles on the elements themselves,
+  allowing each blob to have a unique animation path.
+*/
+@layer utilities {
+  @keyframes aurora {
+    from {
+      transform: translate(var(--x-from), var(--y-from)) rotate(0deg);
+    }
+    to {
+      transform: translate(var(--x-to), var(--y-to)) rotate(360deg);
+    }
+  }
+}
